@@ -1,12 +1,14 @@
-import React from 'react'
-import '../style/Button.css'
+import React from 'react';
+import '../style/Button.css';
 
-const Button = (props) => {
+const Button = ({ callApi, loading }) => {
   return (
     <div className='button'>
-        <button onClick={props.callApi}> Click to generate a joke.</button>
+      <button onClick={callApi} disabled={loading}>
+        {loading ? "Loading..." : "Click to generate a joke."}
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

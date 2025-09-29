@@ -14,7 +14,7 @@ const Jokes = () => {
 
   return (
     <div className="joke">
-      <Button callApi = {fetchApi} />
+      <Button callApi = {fetchApi} loading={loading}/>
       <p>{joke}</p>
     </div>
   )
