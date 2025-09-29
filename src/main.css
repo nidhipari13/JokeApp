@@ -1,0 +1,17 @@
+.app{
+    background: #bce2f5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app img{
+    height: 300px;
+}
+.app h1{
+    color: #7f4200;
+    font-size: 3rem;
+    font-weight:500;
+    padding: 20px 0;
+}
